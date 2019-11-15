@@ -1,27 +1,35 @@
 # RabobankClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+# Application Description:
 
-## Development server
+Create an Angular app that is capable of importing the attached csv-file and visualize it on the screen
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Keep in mind the following:
+1. I should be able to select this file from my computer and see the results on screen
+2. I should be able to filter the results based on minimal issue count
+3. Act as if this code is meant to be production code for the Rabobank
 
-## Code scaffolding
+# Prerequisites:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Nodejs should have been installed and npm added to classpath.
 
-## Build
+# Steps to run the application:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1.	Clone the application RabobankClient from GitHub
 
-## Running unit tests
+     In prompt window, enter the following command
+           git clone https://github.com/navin2jms001/RabobankClient.git
+		   
+    If GIT is not installed, download the zip and unzip to local computer.
+	
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2.	Navigate to the folder where we saved the project.
 
-## Running end-to-end tests
+3.	Enter the following commands to run the project
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+            npm install
 
-## Further help
+            ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+            Then Navigate to `http://localhost:4200/`.
+
