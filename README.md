@@ -18,7 +18,7 @@ Nodejs should have been installed and npm added to classpath.
 1.	Clone the application RabobankClient from GitHub
 
      In prompt window, enter the following command
-           git clone https://github.com/navin2jms001/RabobankClient.git
+           'git clone https://github.com/navin2jms001/RabobankClient.git'
 		   
     If GIT is not installed, download the zip and unzip to local computer.
 	
