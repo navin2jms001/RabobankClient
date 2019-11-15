@@ -1,0 +1,75 @@
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panel-body {
+    height: auto;
+    width: 1000px;
+  }
+  .borderBtmBlue {
+    border-bottom: 1px solid #4d99b9;
+    width: 400px;
+    margin-left: 34%;
+  }
+  h4,.h4,h4 a,.h4 a,h4 span,.h4 span{
+    color: #2b088a !important;
+    text-align: right;
+  }
+  h5,.h5,h5 a,.h5 a,h5 span,.h5 span{
+    color: #2b088a !important;
+    text-align: right;
+    text-shadow:1px 1px 2px rgb(208, 214, 218), 0 0 25px rgb(62, 200, 235), 0 0 5px rgb(219, 219, 235);
+    white-space: pre-line;
+  }
+  form {
+    margin-left: 35%;
+    margin-right:25%;
+    width: 50%;
+  }
+  label{
+    float: left;
+    width: 10em;
+  }
+  button {
+    margin: 0 auto;
+    display: block;
+    height:50px;
+    width: 100px;
+  }
+  .fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top:-5px;
+}

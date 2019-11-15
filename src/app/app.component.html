@@ -1,0 +1,88 @@
+<div class="container theme-showcase" role="main" id="container">
+    <div class="paddingT10" id="landingPage">
+      <div class="">
+        <div class="panel panel-default">
+          <div class="panel-body">
+              <h4 class="col-sm-9 col-form-label" style="padding-right:380px;">RaboBank File Upload</h4>
+              <div class="col-sm-12">
+                  <div class="section borderBtmBlue"></div>
+                  <div class="col-md-12 animated zoomIn">
+                    <br />
+                    <form id='formData' #formdata method="post" enctype="multipart/form-data" 
+                    >
+                      <div class="col-md-offset-2 col-md-8" >
+                        <div class="panel panel-primary">
+                          <div class="panel-body">
+            
+            
+                            <!-- <div class="col-md-4">Please Upload CSV file</div> -->
+                            
+                            <div class="form-group">
+                                <label data-toggle="tooltip" data-placement="top" title="CSV File Upload">
+                                    Please Upload CSV file</label>
+                              <input id="file" #data type="file" name="file" (change)="fileUpload($event.target.files)"
+                              accept=".csv" class="fileUpload btn btn-primary" required [(ngModel)]="inputFile">
+
+                              <input #reset type="submit" value="Reset" class="btn btn-info" (click)="resetPage();">
+                                <br/>
+                              <br/>
+                              <br/>
+                              <br/>
+                            <div *ngIf="rawData">
+                                
+                                <div class="row">
+                                <div class="col-md-offset-8 col-md-4">
+                                   <div class="form-group">
+                                        <label for="search">Filter Issue Count</label>
+                                        <input type="text" [(ngModel)]="issueFilter" class="form-control" 
+                                         id="search" placeholder="Search for issue count" [ngModelOptions]="{standalone: true}">
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <br/>
+                                <table border="1">
+                                    <thead>
+                                  <!-- <tr>
+                                    <th>Id</th>
+                                    <th>First name</th>
+                                    <th>Sur name</th>
+                                    <th>Issue count</th>
+                                    <th>Date of birth</th>
+                                  </tr> -->
+                                  <tr >
+                                      <th>Id</th>
+                                      <th *ngFor="let header of tableTitle;let i = index">{{header}}</th>
+                                  </tr>
+                                  </thead>
+                        
+                                  <tbody>
+                                  <tr *ngFor="let row of rawData | filterPipe: issueFilter;let i = index">
+                                    <td>{{i+1}}</td>
+                                    <td *ngFor="let columnData of row">{{columnData}}</td>
+                                </tr>
+                        </tbody>
+                                </table>
+
+                            </div>
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+            
+                    </form>
+
+
+                    
+
+                    </div>
+                    </div>
+
+                    
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
